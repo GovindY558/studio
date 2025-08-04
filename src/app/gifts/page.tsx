@@ -36,7 +36,7 @@ const giftRevealTimes = [
 
 const GiftSection = ({ gift, isUnlocked }) => {
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       {isUnlocked ? (
         <motion.div
           key="unlocked"
@@ -46,7 +46,7 @@ const GiftSection = ({ gift, isUnlocked }) => {
           className="w-full"
         >
           {gift.id === 'tripod' && (
-             <RevealCard coverContent={<p className="text-lg">A little something to help your inner director shine...</p>}>
+             <RevealCard isLocked={!isUnlocked} coverContent={<p className="text-lg">A little something to help your inner director shine...</p>}>
                 <div className="relative w-full max-w-lg">
                     <Image src="https://placehold.co/600x600" alt="Tripod" width={600} height={600} className="rounded-lg shadow-lg" data-ai-hint="camera tripod" />
                 </div>
@@ -54,7 +54,7 @@ const GiftSection = ({ gift, isUnlocked }) => {
             </RevealCard>
           )}
           {gift.id === 'surprise' && (
-            <RevealCard coverContent={<p className="text-lg">What could it be?</p>}>
+            <RevealCard isLocked={!isUnlocked} coverContent={<p className="text-lg">What could it be?</p>}>
                 <div className="relative w-full max-w-sm">
                     <Image src="https://placehold.co/400x400" alt="Earrings or Bracelet" width={400} height={400} className="rounded-lg shadow-lg" data-ai-hint="earrings bracelet" />
                 </div>
@@ -87,6 +87,9 @@ export default function GiftPage() {
     const [now, setNow] = useState(new Date());
 
     useEffect(() => {
+        // Set the state to the current date on mount to avoid hydration mismatch
+        setNow(new Date());
+
         const timer = setInterval(() => {
             setNow(new Date());
         }, 1000);

@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
-import { RevealCard } from './reveal-card';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
 import { sendClothingChoice } from '@/ai/flows/send-clothing-choice';
@@ -61,11 +60,7 @@ export function ClothingChoice() {
   }
 
   return (
-    <RevealCard
-      coverContent={<p className="text-lg">Something stylish, just for you. Pick any two you love!</p>}
-      contentClassName="!p-0"
-    >
-      <div className="w-full">
+      <div className="w-full bg-card rounded-lg shadow-lg">
         <div className="p-6 text-center">
           <h3 className="text-2xl font-headline">Your Style, Your Choice</h3>
           <p className="text-muted-foreground font-body mt-2">Pick any two, and they're yours!</p>
@@ -103,6 +98,5 @@ export function ClothingChoice() {
           </Button>
         </div>
       </div>
-    </RevealCard>
   );
 }
