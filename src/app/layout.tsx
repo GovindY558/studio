@@ -3,6 +3,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from "@/components/ui/toaster"
 import { MusicProvider } from '@/context/MusicContext';
+import { EnableMusicDialog } from '@/components/enable-music-dialog';
 
 export const metadata: Metadata = {
   title: 'LoveStory',
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={cn("font-body antialiased")}>
         <MusicProvider>
           {children}
+          <EnableMusicDialog />
         </MusicProvider>
         <Toaster />
       </body>
