@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from 'react';
@@ -14,14 +15,14 @@ const videos = [
   {
     id: '2024',
     title: "This Year's Special",
-    thumbnail: 'https://placehold.co/1280x720',
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
     hint: 'couple love story',
     src: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1',
   },
   {
     id: '2023',
     title: 'A Look Back',
-    thumbnail: 'https://placehold.co/1280x720',
+    thumbnail: 'https://img.youtube.com/vi/uHgt8giw1LY/maxresdefault.jpg',
     hint: 'travel montage',
     src: 'https://www.youtube.com/embed/uHgt8giw1LY?autoplay=1',
   },
