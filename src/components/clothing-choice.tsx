@@ -8,6 +8,7 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { RevealCard } from './reveal-card';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
+import { sendClothingChoice } from '@/ai/flows/send-clothing-choice';
 
 const clothingItems = [
   { id: 'zara_tshirt', name: 'Zara Graphic T-Shirt', src: 'https://placehold.co/400x500', hint: 'graphic t-shirt' },
@@ -18,6 +19,7 @@ const clothingItems = [
 
 export function ClothingChoice() {
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const handleSelect = (itemId: string) => {
@@ -37,11 +39,25 @@ export function ClothingChoice() {
     });
   };
 
-  const handleSubmit = () => {
-     toast({
-        title: "Choices Sent!",
-        description: "I've got your preferences. Can't wait to see you in them!",
-      });
+  const handleSubmit = async () => {
+     setIsSubmitting(true);
+     try {
+        const selectedNames = selectedItems.map(id => clothingItems.find(item => item.id === id)?.name || 'Unknown Item');
+        await sendClothingChoice({ choices: selectedNames });
+        toast({
+            title: "Choices Sent!",
+            description: "I've got your preferences. Can't wait to see you in them!",
+        });
+     } catch (error) {
+        console.error("Failed to send choices:", error);
+        toast({
+            title: "Uh oh!",
+            description: "Something went wrong sending your choices. Please try again.",
+            variant: "destructive",
+        });
+     } finally {
+        setIsSubmitting(false);
+     }
   }
 
   return (
@@ -82,8 +98,8 @@ export function ClothingChoice() {
           ))}
         </div>
         <div className="p-6 text-center">
-          <Button onClick={handleSubmit} disabled={selectedItems.length === 0} size="lg">
-            Confirm My Choices ({selectedItems.length}/2)
+          <Button onClick={handleSubmit} disabled={selectedItems.length === 0 || isSubmitting} size="lg">
+            {isSubmitting ? 'Sending...' : `Confirm My Choices (${selectedItems.length}/2)`}
           </Button>
         </div>
       </div>

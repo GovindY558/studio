@@ -52,13 +52,21 @@ const TimelineItem = ({ memory, index }: { memory: typeof memories[0], index: nu
   const isEven = index % 2 === 0;
 
   const cardVariants = {
-    hidden: { opacity: 0, x: isEven ? -100 : 100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
+    hidden: { opacity: 0, x: isEven ? -100 : 100, scale: 0.9 },
+    visible: { 
+      opacity: 1, 
+      x: 0, 
+      scale: 1,
+      transition: { duration: 0.6, ease: [0.25, 1, 0.5, 1] } 
+    }
   };
 
   const dotVariants = {
     hidden: { scale: 0 },
-    visible: { scale: 1, transition: { duration: 0.5, delay: 0.4 } }
+    visible: { 
+      scale: 1, 
+      transition: { duration: 0.4, delay: 0.3, ease: "easeOut" } 
+    }
   }
 
   return (
@@ -66,7 +74,7 @@ const TimelineItem = ({ memory, index }: { memory: typeof memories[0], index: nu
         className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.4 }}
     >
       <div className="flex items-center justify-center w-10 md:w-12">
         <div className="hidden md:block w-px h-full bg-border -translate-x-px" />
@@ -75,13 +83,13 @@ const TimelineItem = ({ memory, index }: { memory: typeof memories[0], index: nu
       </div>
 
       <motion.div variants={cardVariants} className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)]">
-        <div className="bg-card p-4 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+        <div className="bg-card/80 backdrop-blur-sm p-4 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
           <div className="aspect-[4/3] rounded-md overflow-hidden relative">
             <Image
               src={memory.src}
               alt={memory.alt}
               fill
-              className="object-cover grayscale hover:grayscale-0 filter saturate-50 hover:saturate-100 transition-all duration-500"
+              className="object-cover grayscale hover:grayscale-0 filter saturate-50 hover:saturate-100 transition-all duration-500 ease-in-out"
               data-ai-hint={memory.hint}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
