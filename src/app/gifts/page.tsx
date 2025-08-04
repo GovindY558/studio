@@ -96,7 +96,7 @@ export default function GiftPage() {
                                             <RevealCard coverContent={<p className="text-lg">A little something to help your inner director shine...</p>}>
                                                 <div className="flex flex-col items-center text-center">
                                                     <div className="relative w-full max-w-lg">
-                                                        <Image src="https://placehold.co/600x600" alt="Tripod" width={600} height={600} className="rounded-lg shadow-lg" data-ai-hint="camera tripod" />
+                                                        <Image src="https://placehold.co/600x600.png" alt="Tripod" width={600} height={600} className="rounded-lg shadow-lg" data-ai-hint="camera tripod" />
                                                     </div>
                                                     <p className="mt-4 font-body text-lg max-w-prose">I know how much you love creating beautiful videos. This is to help you capture every perfect angle. Can't wait to see what you create!</p>
                                                 </div>
@@ -123,7 +123,7 @@ export default function GiftPage() {
                                              <RevealCard coverContent={<p className="text-lg">What could it be?</p>}>
                                                 <div className="flex flex-col items-center text-center">
                                                     <div className="relative w-full max-w-sm">
-                                                        <Image src="https://placehold.co/400x400" alt="Earrings or Bracelet" width={400} height={400} className="rounded-lg shadow-lg" data-ai-hint="earrings bracelet" />
+                                                        <Image src="https://placehold.co/400x400.png" alt="Earrings or Bracelet" width={400} height={400} className="rounded-lg shadow-lg" data-ai-hint="earrings bracelet" />
                                                     </div>
                                                     <p className="mt-4 font-body text-lg">A little sparkle for the brightest person I know.</p>
                                                 </div>

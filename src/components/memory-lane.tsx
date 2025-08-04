@@ -5,42 +5,42 @@ import { motion } from 'framer-motion';
 
 const memories = [
   {
-    src: "https://placehold.co/600x800",
+    src: "https://placehold.co/600x800.png",
     alt: "Our first date",
     caption: "Our First Date",
     date: "A day to remember",
     hint: "couple selfie"
   },
   {
-    src: "https://placehold.co/600x800",
+    src: "https://placehold.co/600x800.png",
     alt: "Trip to the mountains",
     caption: "The Mountain Adventure",
     date: "The view was almost as beautiful as you",
     hint: "mountain landscape"
   },
   {
-    src: "https://placehold.co/600x800",
+    src: "https://placehold.co/600x800.png",
     alt: "Her graduation day",
     caption: "Your Graduation!",
     date: "So incredibly proud of you",
     hint: "graduation photo"
   },
   {
-    src: "https://placehold.co/600x800",
+    src: "https://placehold.co/600x800.png",
     alt: "A silly selfie",
     caption: "Just Being Silly",
     date: "My favorite pastime",
     hint: "couple goofy"
   },
   {
-    src: "https://placehold.co/600x800",
+    src: "https://placehold.co/600x800.png",
     alt: "Holiday celebration",
     caption: "Holiday Magic",
     date: "That amazing dinner we made",
     hint: "holiday dinner"
   },
   {
-    src: "https://placehold.co/600x800",
+    src: "https://placehold.co/600x800.png",
     alt: "Beach vacation",
     caption: "Soaking Up The Sun",
     date: "Best trip ever",

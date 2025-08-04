@@ -26,7 +26,7 @@ export default function LetterPage() {
             coverContent={<p className="text-lg">Click to read my birthday wishes for you...</p>}
           >
             <div className="relative w-full max-w-2xl">
-              <Image src="https://placehold.co/800x1100" alt="Handwritten birthday letter" width={800} height={1100} className="rounded-lg shadow-lg object-contain" data-ai-hint="handwritten letter" />
+              <Image src="https://placehold.co/800x1100.png" alt="Handwritten birthday letter" width={800} height={1100} className="rounded-lg shadow-lg object-contain" data-ai-hint="handwritten letter" />
             </div>
             <p className="mt-4 text-center font-body text-lg">My dearest, happy birthday! I hope this letter brings a smile to your face.</p>
           </RevealCard>
@@ -37,7 +37,7 @@ export default function LetterPage() {
             coverContent={<p className="text-lg">Something from the heart...</p>}
           >
             <div className="relative w-full max-w-2xl">
-              <Image src="https://placehold.co/800x1100" alt="Handwritten love letter" width={800} height={1100} className="rounded-lg shadow-lg object-contain" data-ai-hint="love letter" />
+              <Image src="https://placehold.co/800x1100.png" alt="Handwritten love letter" width={800} height={1100} className="rounded-lg shadow-lg object-contain" data-ai-hint="love letter" />
             </div>
             <p className="mt-4 text-center font-body text-lg">...about us, our journey, and my promise to you.</p>
           </RevealCard>

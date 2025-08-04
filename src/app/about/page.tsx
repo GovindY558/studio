@@ -25,7 +25,7 @@ export default function AboutPage() {
             <Card className="bg-card/80 backdrop-blur-sm">
                 <CardContent className="p-8 md:p-12 space-y-8">
                     <div className="relative aspect-[3/1] w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
-                        <Image src="https://placehold.co/1200x400" alt="Romantic banner" fill className="object-cover" data-ai-hint="romantic hearts" />
+                        <Image src="https://placehold.co/1200x400.png" alt="Romantic banner" fill className="object-cover" data-ai-hint="romantic hearts" />
                     </div>
                     <div className="font-body text-lg text-foreground/90 max-w-3xl mx-auto space-y-6 text-center">
                         <p>This is the story of Yashraj and Ayushi. A tale written not in the stars, but in shared glances, quiet moments, and endless laughter. It's a story that doesn't need a grand library; it lives in the spaces between our hands and the melody of our favorite songs.</p>

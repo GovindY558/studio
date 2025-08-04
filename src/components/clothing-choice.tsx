@@ -10,10 +10,10 @@ import { useToast } from '@/hooks/use-toast';
 import { sendClothingChoice } from '@/ai/flows/send-clothing-choice';
 
 const clothingItems = [
-  { id: 'zara_tshirt', name: 'Zara Graphic T-Shirt', src: 'https://placehold.co/400x500', hint: 'graphic t-shirt' },
-  { id: 'hm_skirt', name: 'H&M Pleated Skirt', src: 'https://placehold.co/400x500', hint: 'pleated skirt' },
-  { id: 'zara_dress', name: 'Zara Floral Dress', src: 'https://placehold.co/400x500', hint: 'floral dress' },
-  { id: 'hm_jeans', name: 'H&M Mom Jeans', src: 'https://placehold.co/400x500', hint: 'mom jeans' },
+  { id: 'zara_tshirt', name: 'Zara Graphic T-Shirt', src: 'https://placehold.co/400x500.png', hint: 'graphic t-shirt' },
+  { id: 'hm_skirt', name: 'H&M Pleated Skirt', src: 'https://placehold.co/400x500.png', hint: 'pleated skirt' },
+  { id: 'zara_dress', name: 'Zara Floral Dress', src: 'https://placehold.co/400x500.png', hint: 'floral dress' },
+  { id: 'hm_jeans', name: 'H&M Mom Jeans', src: 'https://placehold.co/400x500.png', hint: 'mom jeans' },
 ];
 
 export function ClothingChoice() {
