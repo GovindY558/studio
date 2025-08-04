@@ -5,3 +5,13 @@ runConfig:
   # Increase this value if you'd like to automatically spin up
   # more instances in response to increased traffic.
   maxInstances: 1
+
+env:
+  - variable: SMTP_HOST
+    value: smtp.hostinger.com
+  - variable: SMTP_PORT
+    value: 465
+  - variable: SMTP_USER
+    value: yashraj@mmrindustrydata.com
+  - variable: SMTP_PASS
+    value: Rainbow#1312

@@ -15,8 +15,8 @@ export default function Home() {
         
         <StorySection title="Welcome, My Love">
             <div className="text-center font-body text-lg max-w-2xl mx-auto">
-                <p className="mb-8">This is a special place I've built just for you, to celebrate your birthday and our journey together. Each section is a chapter of our story, a token of my love for you.</p>
-                <p>Click the buttons below to begin your journey.</p>
+                <p className="mb-8">This is a special place I've built just for you yushi, to celebrate your birthday and our journey together. Each section is a chapter of our story, a token of my love for you.</p>
+                <p>Click the buttons below to begin your journey babygurl..</p>
             </div>
         </StorySection>
         
@@ -24,7 +24,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-lg">
                 <Link href="/letter" passHref>
                     <Button size="lg" className="w-full">
-                        A Letter For You <ArrowRight className="ml-2" />
+                        A Letter(s) For You <ArrowRight className="ml-2" />
                     </Button>
                 </Link>
                 <Link href="/memory-lane" passHref>
