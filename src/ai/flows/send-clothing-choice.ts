@@ -8,13 +8,15 @@
 
 import { ai } from '@/ai/genkit';
 import { z } from 'zod';
+import nodemailer from 'nodemailer';
 
-// IMPORTANT: This flow is a placeholder. To make it work, you need to:
-// 1. Choose an email sending service (e.g., Resend, SendGrid, Mailgun).
-// 2. Add the corresponding npm package for that service.
-// 3. Implement the `sendEmail` tool below using your chosen service's API.
-// 4. Set the required API keys (e.g., RESEND_API_KEY) as environment variables.
-// 5. Update the `to` and `from` email addresses in the prompt.
+// IMPORTANT: This flow uses Nodemailer to send emails via SMTP.
+// For this to work, you MUST set the following environment variables in your .env file:
+// SMTP_HOST: The hostname of your SMTP server (e.g., "smtp.gmail.com").
+// SMTP_PORT: The port of your SMTP server (e.g., 587).
+// SMTP_USER: The username for your SMTP authentication.
+// SMTP_PASS: The password for your SMTP authentication.
+
 
 const SendClothingChoiceInputSchema = z.object({
   choices: z.array(z.string()).describe("The list of clothing items she selected."),
@@ -34,25 +36,38 @@ const emailTool = ai.defineTool(
         outputSchema: z.void(),
     },
     async (input) => {
-        // TODO: Replace with your actual email sending logic
-        console.log("****************************************************");
-        console.log("Email Tool Called (Placeholder)");
-        console.log(`To: ${input.to}`);
-        console.log(`From: ${input.from}`);
-        console.log(`Subject: ${input.subject}`);
-        console.log(`Body: ${input.body}`);
-        console.log("In a real app, this would send an email.");
-        console.log("****************************************************");
-        
-        // Example with Resend (if you `npm install resend`):
-        // const { Resend } = require('resend');
-        // const resend = new Resend(process.env.RESEND_API_KEY);
-        // await resend.emails.send({
-        //   from: input.from,
-        //   to: input.to,
-        //   subject: input.subject,
-        //   html: input.body,
-        // });
+        const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
+
+        if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS) {
+            console.error("Missing SMTP environment variables. Cannot send email.");
+            // In a real app, you might want to throw an error here
+            // to notify the caller that the email could not be sent.
+            throw new Error("SMTP server is not configured.");
+        }
+
+        const transporter = nodemailer.createTransport({
+            host: SMTP_HOST,
+            port: parseInt(SMTP_PORT, 10),
+            secure: parseInt(SMTP_PORT, 10) === 465, // true for 465, false for other ports
+            auth: {
+                user: SMTP_USER,
+                pass: SMTP_PASS,
+            },
+        });
+
+        try {
+            await transporter.sendMail({
+                from: `"${input.from}" <${SMTP_USER}>`, // sender address
+                to: input.to, // list of receivers
+                subject: input.subject, // Subject line
+                html: input.body, // html body
+            });
+            console.log("Email sent successfully!");
+        } catch (error) {
+            console.error("Failed to send email:", error);
+            // Re-throw the error to let the flow know something went wrong.
+            throw new Error("Failed to send email.");
+        }
     }
 )
 
@@ -72,7 +87,7 @@ const sendChoiceFlow = ai.defineFlow(
         {{/each}}
         
         The 'to' address is 'YOUR_EMAIL@example.com'.
-        The 'from' address is 'notification@lovestory.app'.
+        The 'from' address is 'LoveStory Notifier'.
         `,
         input: input,
         tools: [emailTool],
