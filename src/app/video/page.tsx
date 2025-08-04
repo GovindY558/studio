@@ -12,20 +12,21 @@ import { ArrowLeft, PlayCircle } from 'lucide-react';
 import Image from 'next/image';
 import { BackgroundMusic } from '@/components/background-music';
 
+
 const videos = [
   {
-    id: '2024',
+    id: '2025',
     title: "This Year's Special",
     thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-    hint: 'couple love story',
+    hint: 'love story',
     src: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1',
   },
   {
-    id: '2023',
+    id: '2024',
     title: 'A Look Back',
-    thumbnail: 'https://img.youtube.com/vi/uHgt8giw1LY/maxresdefault.jpg',
-    hint: 'travel montage',
-    src: 'https://www.youtube.com/embed/uHgt8giw1LY?autoplay=1',
+    thumbnail: 'https://img.youtube.com/vi/6_HbCHvYwxY/maxresdefault.jpg',
+    hint: ' montage',
+    src: 'https://www.youtube.com/embed/6_HbCHvYwxY?autoplay=1',
   },
 ];
 

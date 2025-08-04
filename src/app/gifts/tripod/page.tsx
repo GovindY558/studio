@@ -36,7 +36,7 @@ export default function TripodGiftPage() {
                                     <div className="flex flex-col items-center text-center">
                                         <div className="relative w-full max-w-lg">
                                             {/* To add your image, place it in /public/gifts/tripod.png */}
-                                            <Image src="/gifts/tripod.png" alt="Tripod" width={600} height={600} className="rounded-lg shadow-lg" data-ai-hint="camera tripod" />
+                                            <Image src="/gifts/tripod.jpeg" alt="Tripod" width={600} height={600} className="rounded-lg shadow-lg" data-ai-hint="camera tripod" />
                                         </div>
                                         <p className="mt-4 font-body text-lg max-w-prose">I know how much you love creating beautiful videos. This is to help you capture every perfect angle. Can't wait to see what you create!</p>
                                     </div>

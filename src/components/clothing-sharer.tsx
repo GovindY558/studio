@@ -31,35 +31,88 @@ import { Card } from './ui/card';
 //    - The `images` array should contain the paths to these images, e.g., "/gifts/wardrobe/dress-1.png".
 //    - Make sure the folder structure matches, e.g., public/gifts/wardrobe/
 const clothingItems = [
-  { 
-    id: 'zara_dress', 
-    name: 'Zara Floral Dress', 
-    images: ['/gifts/wardrobe/dress-1.png', '/gifts/wardrobe/dress-2.png'], 
-    hint: 'floral dress',
-    message: "I saw this and immediately thought of you. I can just imagine how beautiful you'd look in it on one of our cafe dates. What do you think?"
+  {
+    id: 'zara_1',
+    name: 'TRF WIDE-LEG HIGH-WAIST FULL-LENGTH JEANS',
+    images: ['/gifts/wardrobe/jeansone-1.jpg', '/gifts/wardrobe/jeansone-2.jpg'],
+    hint: 'WIDE-LEG HIGH-WAIST FULL-LENGTH JEANS',
+    message: "Jeans that stay great even after a thousand washes—thought these wide‑legs would be a forever staple for you.",
+    link: 'https://www.zara.com/in/en/trf-wide-leg-high-waist-full-length-jeans-p06045224.html?v1=480810171'
   },
-  { 
-    id: 'hm_jeans', 
-    name: 'H&M Mom Jeans', 
-    images: ['/gifts/wardrobe/jeans-1.png'], 
-    hint: 'mom jeans',
-    message: "Something cute and comfy for our casual movie nights or just strolling through the park. Would this be your style?"
+  {
+    id: 'zara_2',
+    name: 'TRF MID-WAIST WIDE-LEG JEANS',
+    images: ['/gifts/wardrobe/jeanstwo-1.jpg', '/gifts/wardrobe/jeanstwo-2.jpg'],
+    hint: 'TRF MID-WAIST WIDE-LEG JEANS',
+    message: "The mid‑waist, wide‑leg style is so you—classic, comfy, and looks newer than ever even after a wash.",
+    link: 'https://www.zara.com/in/en/trf-mid-waist-wide-leg-jeans-p05359024.html?v1=480810175'
   },
-  { 
-    id: 'zara_tshirt', 
-    name: 'Zara Graphic T-Shirt', 
-    images: ['/gifts/wardrobe/tshirt-1.png'], 
-    hint: 'graphic t-shirt',
-    message: "This looked so cool and reminded me of your amazing artistic side. Let me know if you like it!"
-   },
-  { 
-    id: 'hm_skirt', 
-    name: 'H&M Pleated Skirt', 
-    images: ['/gifts/wardrobe/skirt-1.png', '/gifts/wardrobe/skirt-2.png'], 
-    hint: 'pleated skirt',
-    message: "This one is just pure elegance, just like you. I think it would be perfect for a special dinner out. Send this to me if you agree!"
+  {
+    id: 'zara_3',
+    name: 'TRF WIDE-LEG HIGH-WAIST JEANS',
+    images: ['/gifts/wardrobe/jeansthree-1.jpg', '/gifts/wardrobe/jeansthree-2.jpg'],
+    hint: 'TRF WIDE-LEG HIGH-WAIST JEANS',
+    message: "This style felt so artistic—thought it&apos;d match your creative vibe, even day‑to‑day styling.",
+    link: 'https://www.zara.com/in/en/trf-wide-leg-high-waist-jeans-p05575029.html?v1=463549555'
   },
-];
+  {
+    id: 'zara_4',
+    name: 'RUSTIC COTTON T-SHIRT',
+    images: ['/gifts/wardrobe/tshirtone-1.jpg'],
+    hint: 'RUSTIC COTTON T-SHIRT',
+    message: "I remembered you choosing some cute T‑shirts at Westside; thought this had your style written all over it.",
+    link: 'https://www.zara.com/in/en/rustic-cotton-t-shirt-p01165444.html?v1=454393254'
+  },
+  {
+    id: 'zara_5',
+    name: 'TPLEATED ZIP T-SHIRT',
+    images: ['/gifts/wardrobe/tshirttwo-1.jpg', '/gifts/wardrobe/tshirttwo-2.jpg'],
+    hint: 'TPLEATED ZIP T-SHIRT',
+    message: "This T‑shirt felt like the vibe from Westside—the colors and cut reminded me of what you'd pick.",
+    link: 'https://www.zara.com/in/en/pleated-zip-t-shirt-p03253802.html?v1=455203389'
+  },
+  {
+    id: 'zara_6',
+    name: 'RUFFLE SKORT',
+    images: ['/gifts/wardrobe/skirtone-1.jpg'],
+    hint: 'RUFFLE SKORT',
+    message: "This skort made me think of your playful side—hope you'd love the choice I made for you.",
+    link: 'https://www.zara.com/in/en/ruffle-skort-p04764500.html?v1=468888628'
+  },
+  {
+    id: 'zara_7',
+    name: 'HIGH-WAIST CURVED DENIM SHORTS',
+    images: ['/gifts/wardrobe/shortsone-1.jpg', '/gifts/wardrobe/shortsone-2.jpg'],
+    hint: 'HIGH-WAIST CURVED DENIM SHORTS',
+    message: "I know you&apos;ve been on the lookout for good shorts—these caught my eye and seemed just right for you.",
+    link: 'https://www.zara.com/in/en/high-waist-curved-denim-shorts-p03607002.html?v1=466558679'
+  },
+  {
+    id: 'zara_8',
+    name: 'HIGH-WAIST CROSSOVER WAIST TRF MOM FIT DENIM BERMUDA SHORTS',
+    images: ['/gifts/wardrobe/shortstwo-1.jpg', '/gifts/wardrobe/shortstwo-2.jpg'],
+    hint: 'HIGH-WAIST CROSSOVER WAIST TRF MOM FIT DENIM BERMUDA SHORTS',
+    message: "Since you&apos;ve been needing shorts for so long, I thought these could be your next favorite pair—it felt like they were meant for you.",
+    link: 'https://www.zara.com/in/en/high-waist-crossover-waist-trf-mom-fit-denim-bermuda-shorts-p04060006.html?v1=452696927'
+  },
+  {
+    id: 'zara_9',
+    name: 'HALTER GORED SHORT DRESS',
+    images: ['/gifts/wardrobe/dressone-1.jpg', '/gifts/wardrobe/dressone-2.jpg'],
+    hint: 'HALTER GORED SHORT DRESS',
+    message: "This pink dress made me think of how beautiful you&apos;d look in it—just had to show you.",
+    link: 'https://www.zara.com/in/en/halter-gored-short-dress-p04661379.html?v1=456207856'
+  },
+  {
+    id: 'zara_10',
+    name: 'TRF MID-WAIST WIDE-LEG JEANS',
+    images: ['/gifts/wardrobe/topone-1.jpg', '/gifts/wardrobe/topone-2.jpg'],
+    hint: 'TRF MID-WAIST WIDE-LEG JEANS',
+    message: "This linen blend top feels like your taste—I just thought you'd love what I picked out for you.",
+    link: 'https://www.zara.com/in/en/crossover-linen-blend-top-p08026709.html?v1=466813843'
+  }
+]
+;
 
 type ClothingItem = typeof clothingItems[0];
 
@@ -71,7 +124,7 @@ export function ClothingSharer() {
     // Use the current window's location for the base URL.
     const baseUrl = window.location.origin;
     const shareUrl = `${baseUrl}/gifts/wardrobe?choice=${item.id}`;
-    const shareText = `Hey Yashraj! I really like this: ${item.name}. ${item.message}`;
+    const shareText = `Hey Yashraj! I really like this: ${item.name}. ${item.link}`;
     
     if (navigator.share) {
       try {
