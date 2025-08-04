@@ -158,7 +158,7 @@ export function ClothingSharer() {
       <div className="w-full">
         <div className="p-6 text-center">
           <h3 className="text-2xl font-headline">Your Style, Your Choice</h3>
-          <p className="text-muted-foreground font-body mt-2">I've picked out a few things I thought you might love. Click on any item to see it closer, and if you adore it, share it with me! Any two you send me are yours.</p>
+          <p className="text-muted-foreground font-body mt-2">I've picked out a few things I thought you might love. Click on any item to see it closer, and if you find one that steals your heart, share it with me; because whatever you fall for, is yours.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
           {clothingItems.map(item => (

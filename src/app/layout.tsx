@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Toaster } from "@/components/ui/toaster"
 import { MusicProvider } from '@/context/MusicContext';
 import { EnableMusicDialog } from '@/components/enable-music-dialog';
+import { SparkleCursor } from '@/components/sparkle-cursor';
 
 export const metadata: Metadata = {
   title: 'LoveStory',
@@ -24,6 +25,7 @@ export default function RootLayout({
       </head>
       <body className={cn("font-body antialiased")}>
         <MusicProvider>
+          <SparkleCursor />
           {children}
           <EnableMusicDialog />
         </MusicProvider>
