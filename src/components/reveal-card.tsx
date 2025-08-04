@@ -12,16 +12,13 @@ interface RevealCardProps {
   className?: string;
   coverClassName?: string;
   contentClassName?: string;
-  isLocked?: boolean;
 }
 
-export function RevealCard({ coverContent, children, className, coverClassName, contentClassName, isLocked = false }: RevealCardProps) {
+export function RevealCard({ coverContent, children, className, coverClassName, contentClassName }: RevealCardProps) {
   const [isRevealed, setIsRevealed] = useState(false);
 
   const handleReveal = () => {
-    if (!isLocked) {
-      setIsRevealed(true);
-    }
+    setIsRevealed(true);
   }
 
   return (
@@ -36,7 +33,7 @@ export function RevealCard({ coverContent, children, className, coverClassName, 
           style={{ transition: 'max-height 0.7s ease-in-out, opacity 0.5s ease-in-out, padding 0.7s ease-in-out' }}
         >
           <div className="font-body text-muted-foreground mb-6">{coverContent}</div>
-          <Button onClick={handleReveal} size="lg" variant="default" disabled={isLocked}>
+          <Button onClick={handleReveal} size="lg" variant="default">
             <Gift className="mr-2 h-5 w-5" />
             Click to Reveal
           </Button>
