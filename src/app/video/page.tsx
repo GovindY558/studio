@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft, PlayCircle } from 'lucide-react';
 import Image from 'next/image';
+import { BackgroundMusic } from '@/components/background-music';
 
 const videos = [
   {
@@ -41,6 +42,7 @@ export default function VideoPage() {
 
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
+      <BackgroundMusic src="/music-video.mp3" />
       <PageHeader />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-16">

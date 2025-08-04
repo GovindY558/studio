@@ -2,7 +2,6 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from "@/components/ui/toaster"
-import { BackgroundMusic } from '@/components/background-music';
 
 export const metadata: Metadata = {
   title: 'LoveStory',
@@ -22,7 +21,6 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Belleza&display=swap" rel="stylesheet" />
       </head>
       <body className={cn("font-body antialiased")}>
-        <BackgroundMusic src="/placeholder-music.mp3" />
         {children}
         <Toaster />
       </body>

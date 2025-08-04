@@ -5,10 +5,12 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft, Phone, MessageCircle, Heart } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { BackgroundMusic } from '@/components/background-music';
 
 export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
+      <BackgroundMusic src="/music-contact.mp3" />
       <PageHeader />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-16">
 

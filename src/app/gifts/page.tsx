@@ -22,6 +22,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { cn } from '@/lib/utils';
+import { BackgroundMusic } from '@/components/background-music';
 
 const giftColors = [
     "hsl(var(--background))",
@@ -73,6 +74,7 @@ export default function GiftPage() {
             className="flex flex-col min-h-dvh text-foreground transition-colors duration-500"
             style={{ backgroundColor }}
         >
+            <BackgroundMusic src="/music-gifts.mp3" />
             <PageHeader />
             <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-16">
                 

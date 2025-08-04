@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { BackgroundMusic } from '@/components/background-music';
 
 export default function MemoryLanePage() {
   const { scrollYProgress } = useScroll();
@@ -28,6 +29,7 @@ export default function MemoryLanePage() {
       className="flex flex-col min-h-dvh text-foreground transition-colors duration-500"
       style={{ backgroundColor }}
     >
+      <BackgroundMusic src="/music-memories.mp3" />
       <PageHeader />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-16">
 
