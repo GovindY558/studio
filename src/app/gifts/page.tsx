@@ -84,7 +84,7 @@ const GiftSection = ({ gift, isUnlocked }) => {
 
 
 export default function GiftPage() {
-    const [now, setNow] = useState(new Date());
+    const [now, setNow] = useState<Date | null>(null);
 
     useEffect(() => {
         // Set the state to the current date on mount to avoid hydration mismatch
@@ -108,7 +108,8 @@ export default function GiftPage() {
                 </div>
                 
                 {giftRevealTimes.map((gift) => {
-                    const isUnlocked = now >= gift.unlockTime;
+                    // Treat as locked until the client has hydrated and set the time.
+                    const isUnlocked = now ? now >= gift.unlockTime : false;
                     return (
                         <StorySection key={gift.id} title={gift.title}>
                             <GiftSection gift={gift} isUnlocked={isUnlocked} />
