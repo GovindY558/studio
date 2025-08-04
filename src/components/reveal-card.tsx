@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, type ReactNode } from 'react';
@@ -5,6 +6,7 @@ import { Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
 
 interface RevealCardProps {
   coverContent: ReactNode;
@@ -22,7 +24,7 @@ export function RevealCard({ coverContent, children, className, coverClassName, 
   }
 
   return (
-    <Card className={cn("w-full overflow-hidden shadow-lg bg-card", className)}>
+    <Card className={cn("w-full overflow-hidden shadow-lg bg-card/80 backdrop-blur-sm", className)}>
       <div className="relative">
         <div
           className={cn(
@@ -33,10 +35,27 @@ export function RevealCard({ coverContent, children, className, coverClassName, 
           style={{ transition: 'max-height 0.7s ease-in-out, opacity 0.5s ease-in-out, padding 0.7s ease-in-out' }}
         >
           <div className="font-body text-muted-foreground mb-6">{coverContent}</div>
-          <Button onClick={handleReveal} size="lg" variant="default">
-            <Gift className="mr-2 h-5 w-5" />
-            Click to Reveal
-          </Button>
+          <motion.div
+            animate={{
+              boxShadow: [
+                "0 0 0 0 hsl(var(--primary) / 0.7)",
+                "0 0 0 10px hsl(var(--primary) / 0)",
+                "0 0 0 0 hsl(var(--primary) / 0)",
+              ],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatDelay: 1,
+              ease: "easeInOut",
+            }}
+            className="rounded-md"
+          >
+            <Button onClick={handleReveal} size="lg" variant="default" className="shadow-lg">
+              <Gift className="mr-2 h-5 w-5" />
+              Click to Reveal
+            </Button>
+          </motion.div>
         </div>
 
         <div

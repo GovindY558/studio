@@ -4,6 +4,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import type { EmblaCarouselType } from 'embla-carousel-react'
+import { motion, useMotionValue, useTransform } from 'framer-motion';
 
 import { PageHeader } from '@/components/page-header';
 import { PageFooter } from '@/components/page-footer';
@@ -18,10 +21,58 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import { cn } from '@/lib/utils';
+
+const giftColors = [
+    "hsl(var(--background))",
+    "hsl(340, 60%, 94%)",
+    "hsl(269, 60%, 94%)",
+]
 
 export default function GiftPage() {
+    const [api, setApi] = useState<EmblaCarouselType | undefined>()
+    const [current, setCurrent] = useState(0)
+    
+    const progress = useMotionValue(0);
+    const backgroundColor = useTransform(
+        progress,
+        [0, 1, 2],
+        giftColors
+    );
+
+    useEffect(() => {
+        if (!api) {
+            return
+        }
+
+        const onSelect = (api: EmblaCarouselType) => {
+            setCurrent(api.selectedScrollSnap());
+        }
+
+        const onScroll = (api: EmblaCarouselType) => {
+            progress.set(api.scrollProgress() * (api.scrollSnapList().length - 1))
+        }
+
+        api.on("select", onSelect)
+        api.on("scroll", onScroll)
+
+        // Set initial values
+        onSelect(api);
+        onScroll(api);
+
+
+        return () => {
+            api.off("select", onSelect)
+            api.off("scroll", onScroll)
+        }
+    }, [api, progress])
+
+
     return (
-        <div className="flex flex-col min-h-dvh bg-background text-foreground">
+        <motion.div 
+            className="flex flex-col min-h-dvh text-foreground transition-colors duration-500"
+            style={{ backgroundColor }}
+        >
             <PageHeader />
             <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-16">
                 
@@ -30,9 +81,10 @@ export default function GiftPage() {
                         <Button variant="outline"><ArrowLeft className="mr-2" /> Back to Main Page</Button>
                     </Link>
                 </div>
-
-                <div className="w-full flex justify-center">
-                    <Carousel className="w-full max-w-4xl">
+                
+                <div className="w-full flex flex-col items-center justify-center space-y-4">
+                     <p className="text-muted-foreground font-body">Use the arrows to navigate through your gifts</p>
+                    <Carousel setApi={setApi} className="w-full max-w-4xl">
                         <CarouselContent>
                             <CarouselItem>
                                 <div className="p-1">
@@ -82,10 +134,15 @@ export default function GiftPage() {
                         <CarouselPrevious className="hidden md:flex" />
                         <CarouselNext className="hidden md:flex" />
                     </Carousel>
+                    <div className="flex gap-2">
+                        {giftColors.map((_, i) => (
+                            <div key={i} className={cn("h-2 w-2 rounded-full transition-colors", i === current ? 'bg-primary' : 'bg-muted')}/>
+                        ))}
+                    </div>
                 </div>
 
             </main>
             <PageFooter />
-        </div>
+        </motion.div>
     );
 }
