@@ -29,7 +29,7 @@ export function EnableMusicDialog() {
             Enhance Your Experience
           </AlertDialogTitle>
           <AlertDialogDescription>
-            This website has custom background music for each page to make it special. Would you like to enable it for the best experience?
+            Babygirl this website has custom background music for each page to make it special. Would you like to enable it for the best experience?
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>

@@ -17,9 +17,9 @@ const videos = [
   {
     id: '2025',
     title: "This Year's Special",
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/s-JFXacky5k/maxresdefault.jpg',
     hint: 'love story',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1',
+    src: 'https://www.youtube.com/embed/s-JFXacky5k?autoplay=1',
   },
   {
     id: '2024',
@@ -56,7 +56,7 @@ export default function VideoPage() {
 
         <StorySection title="A Moving Picture Show">
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-16 w-full">
-            {videos.map((video) => (
+            {videos.map((video, index) => (
               <div key={video.id} className="flex flex-col items-center">
                 <h3 className="text-3xl font-headline text-center mb-4 text-primary-foreground/90">
                   {video.title}
@@ -69,6 +69,8 @@ export default function VideoPage() {
                     src={video.thumbnail}
                     alt={`Thumbnail for ${video.title}`}
                     fill
+                    priority={index === 0}
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     data-ai-hint={video.hint}
                   />
