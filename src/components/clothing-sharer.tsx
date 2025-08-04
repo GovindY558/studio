@@ -17,10 +17,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogFooter,
-  DialogClose,
 } from "@/components/ui/dialog"
 import { Button } from './ui/button';
-import { Share2, Copy } from 'lucide-react';
+import { Share2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { Card } from './ui/card';
 
@@ -69,11 +68,11 @@ export function ClothingSharer() {
   const { toast } = useToast();
 
   const handleShare = async (item: ClothingItem) => {
-    const shareUrl = `https://<YOUR_APP_URL>/gifts/wardrobe?choice=${item.id}`;
+    // Use the current window's location for the base URL.
+    const baseUrl = window.location.origin;
+    const shareUrl = `${baseUrl}/gifts/wardrobe?choice=${item.id}`;
     const shareText = `Hey Yashraj! I really like this: ${item.name}. ${item.message}`;
     
-    // NOTE: You must replace <YOUR_APP_URL> with your actual deployed website URL for the link to work.
-
     if (navigator.share) {
       try {
         await navigator.share({
@@ -83,6 +82,12 @@ export function ClothingSharer() {
         });
       } catch (error) {
         console.error('Error sharing:', error);
+        // Fallback to clipboard if sharing fails (e.g., permission denied)
+        navigator.clipboard.writeText(shareText + `\nSee it here: ${shareUrl}`);
+        toast({
+          title: "Copied to Clipboard!",
+          description: "Sharing failed, so I've copied the message. Just paste it in our chat!",
+        });
       }
     } else {
       // Fallback for browsers that don't support Web Share API
