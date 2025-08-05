@@ -16,7 +16,7 @@ import { StorySection } from '@/components/story-section';
 export default function TripodGiftPage() {
     return (
         <div className="flex flex-col min-h-dvh bg-background text-foreground transition-colors duration-500"
-             style={{ backgroundColor: "hsl(var(--background))" }}
+             style={{ backgroundColor: "hsl(330, 80%, 96%)" }}
         >
             <BackgroundMusic src="/music-gifts-1.mp3" />
             <PageHeader />

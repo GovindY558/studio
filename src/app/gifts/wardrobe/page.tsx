@@ -15,7 +15,7 @@ import { StorySection } from '@/components/story-section';
 export default function WardrobeGiftPage() {
     return (
         <div className="flex flex-col min-h-dvh text-foreground transition-colors duration-500"
-             style={{ backgroundColor: "hsl(340, 60%, 94%)" }}
+             style={{ backgroundColor: "hsl(340, 85%, 96%)" }}
         >
             <BackgroundMusic src="/music-gifts-2.mp3" />
             <PageHeader />

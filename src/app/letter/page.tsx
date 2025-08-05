@@ -27,7 +27,7 @@ export default function LetterPage() {
           >
             <div className="relative w-full max-w-2xl">
               {/* To add your image, place it in /public/letter.jpg */}
-              <Image src="/letter.jpg" alt="A handwritten letter for Ayushi" width={3024} height={4032} className="rounded-lg shadow-lg object-contain" data-ai-hint="handwritten letter" />
+              <Image src="/letter.jpeg" alt="A handwritten letter for Ayushi" width={3024} height={4032} className="rounded-lg shadow-lg object-contain" data-ai-hint="handwritten letter" />
             </div>
             <p className="mt-4 text-center font-body text-lg">My dearest, every word in this letter comes straight from my heart. Happy birthday, my love.</p>
           </RevealCard>
@@ -39,7 +39,7 @@ export default function LetterPage() {
           >
             <div className="relative w-full max-w-2xl">
                {/* To add your image, place it in /public/rose-promise.jpg */}
-              <Image src="/rose-promise.jpg" alt="A rose and two polaroids as a promise" width={3024} height={4032} className="rounded-lg shadow-lg object-contain" data-ai-hint="rose polaroids" />
+              <Image src="/rose.jpeg" alt="A rose and two polaroids as a promise" width={3024} height={4032} className="rounded-lg shadow-lg object-contain" data-ai-hint="rose polaroids" />
             </div>
             <p className="mt-4 text-center font-body text-lg max-w-prose">I'm keeping this rose safe. It's a promise of all the beautiful moments waiting for us. I'll give it to you the moment we're together again.</p>
           </RevealCard>
@@ -51,7 +51,7 @@ export default function LetterPage() {
           >
             <div className="relative w-full max-w-2xl">
               {/* To add your image, place it in /public/flower-promise.jpg */}
-              <Image src="/flower-promise.jpg" alt="A small flower and two polaroids with a note 'To my love'" width={3024} height={4032} className="rounded-lg shadow-lg object-contain" data-ai-hint="flower message" />
+              <Image src="/tomylove.jpeg" alt="A small flower and two polaroids with a note 'To my love'" width={3024} height={4032} className="rounded-lg shadow-lg object-contain" data-ai-hint="flower message" />
             </div>
             <p className="mt-4 text-center font-body text-lg max-w-prose">Just like the note in this photo says... this little flower is for my love. It's another piece of my heart that I'm holding onto for you.</p>
           </RevealCard>
