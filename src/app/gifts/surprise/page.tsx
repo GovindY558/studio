@@ -36,9 +36,9 @@ export default function SurpriseGiftPage() {
                                     <div className="flex flex-col items-center text-center">
                                         <div className="relative w-full max-w-sm">
                                             {/* To add your image, place it in /public/gifts/bag-charm.png */}
-                                            <Image src="/gifts/surprise.png" alt="Pearl Whimsy Tassel Bag Charm" width={400} height={400} className="rounded-lg shadow-lg" data-ai-hint="pearl bag charm" />
+                                            <Image src="https://dc42isc7oti09.cloudfront.net/media/2025/08/1754414678620-cfisbr.webp" alt="Pearl Whimsy Tassel Bag Charm" width={400} height={400} className="rounded-lg shadow-lg" data-ai-hint="pearl bag charm" />
                                         </div>
-                                        <p className="mt-4 font-body text-lg max-w-prose">I saw this and it instantly reminded me of your classic style and playful heart. It’s a little charm to add a touch of whimsy to your day, a reminder of the little things and the big love we share. Carry it with you and let it be a sparkle of our connection.</p>
+                                        <p className="mt-4 font-body text-lg max-w-prose">I wanted to give you something that you can carry everywhere you will go so this is for you, i hope you will like it yushi</p>
                                     </div>
                                 </RevealCard>
                             </CardContent>
