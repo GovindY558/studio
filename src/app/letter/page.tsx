@@ -11,7 +11,7 @@ import { BackgroundMusic } from '@/components/background-music';
 export default function LetterPage() {
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
-      <BackgroundMusic src="/music-letter.mp3" />
+      <BackgroundMusic src="/music-placeholder-1.mp3" />
       <PageHeader />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-24">
         
@@ -21,27 +21,25 @@ export default function LetterPage() {
             </Link>
         </div>
 
-        <StorySection title="A Letter From My Heart">
+        <StorySection title="A Letter From The Heart">
           <RevealCard
-            coverContent={<p className="text-lg">Click to read my birthday wishes for you...</p>}
+            coverContent={<p className="text-lg">Click to read a special message...</p>}
           >
             <div className="relative w-full max-w-2xl">
-              {/* To add your image, place it in /public/letter.jpg */}
-              <Image src="/letter.jpeg" alt="A handwritten letter for Ayushi" width={3024} height={4032} className="rounded-lg shadow-lg object-contain" data-ai-hint="handwritten letter" />
+              <Image src="https://picsum.photos/seed/letter1/800/1067.png" alt="A heartfelt letter" width={800} height={1067} className="rounded-lg shadow-lg object-contain" data-ai-hint="handwritten letter" />
             </div>
-            <p className="mt-4 text-center font-body text-lg">My dearest, every word in this letter comes straight from my heart. Happy birthday, my love.</p>
+            <p className="mt-4 text-center font-body text-lg">Every word in this letter comes straight from the heart. Happy celebrations!</p>
           </RevealCard>
         </StorySection>
         
         <StorySection title="A Promise in a Rose">
           <RevealCard
-            coverContent={<p className="text-lg">A special promise I'm making to you...</p>}
+            coverContent={<p className="text-lg">A special promise for the future...</p>}
           >
             <div className="relative w-full max-w-2xl">
-               {/* To add your image, place it in /public/rose-promise.jpg */}
-              <Image src="/rose.jpeg" alt="A rose and two polaroids as a promise" width={3024} height={4032} className="rounded-lg shadow-lg object-contain" data-ai-hint="rose polaroids" />
+              <Image src="https://picsum.photos/seed/letter2/800/1067.png" alt="A rose and two polaroids as a promise" width={800} height={1067} className="rounded-lg shadow-lg object-contain" data-ai-hint="rose polaroids" />
             </div>
-            <p className="mt-4 text-center font-body text-lg max-w-prose">I'm keeping this rose safe. It's a promise of all the beautiful moments waiting for us. I'll give it to you the moment we're together again.</p>
+            <p className="mt-4 text-center font-body text-lg max-w-prose">This rose is being kept safe. It's a promise of all the beautiful moments waiting for you. It will be delivered the moment you're here.</p>
           </RevealCard>
         </StorySection>
 
@@ -50,10 +48,9 @@ export default function LetterPage() {
             coverContent={<p className="text-lg">Something else that's waiting for you...</p>}
           >
             <div className="relative w-full max-w-2xl">
-              {/* To add your image, place it in /public/flower-promise.jpg */}
-              <Image src="/tomylove.jpeg" alt="A small flower and two polaroids with a note 'To my love'" width={3024} height={4032} className="rounded-lg shadow-lg object-contain" data-ai-hint="flower message" />
+              <Image src="https://picsum.photos/seed/letter3/800/1067.png" alt="A small flower and two polaroids with a note" width={800} height={1067} className="rounded-lg shadow-lg object-contain" data-ai-hint="flower message" />
             </div>
-            <p className="mt-4 text-center font-body text-lg max-w-prose">Just like the note in this photo says... this little flower is for my love. It's another piece of my heart that I'm holding onto for you.</p>
+            <p className="mt-4 text-center font-body text-lg max-w-prose">Just like the note in this photo says... this is for someone special. It's another piece of the heart that's being held for you.</p>
           </RevealCard>
         </StorySection>
       

@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from 'next/link';
@@ -17,7 +16,7 @@ export default function WardrobeGiftPage() {
         <div className="flex flex-col min-h-dvh text-foreground transition-colors duration-500"
              style={{ backgroundColor: "hsl(340, 85%, 96%)" }}
         >
-            <BackgroundMusic src="/music-gifts-2.mp3" />
+            <BackgroundMusic src="/music-placeholder-3.mp3" />
             <PageHeader />
             <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-16">
                 

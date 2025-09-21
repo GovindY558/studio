@@ -10,7 +10,7 @@ import { BackgroundMusic } from '@/components/background-music';
 export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
-      <BackgroundMusic src="/music-contact.mp3" />
+      <BackgroundMusic src="/music-placeholder-6.mp3" />
       <PageHeader />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-16">
 
@@ -20,9 +20,9 @@ export default function ContactPage() {
             </Link>
         </div>
 
-        <StorySection title="Contact Me">
+        <StorySection title="Get In Touch">
             <div className="max-w-3xl mx-auto text-center font-body text-lg mb-12">
-                <p>Need to reach me? Here are the best ways to get a guaranteed, instant reply.</p>
+                <p>Here are some creative ways to reach out and make someone's day.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
                 <Card className="text-center bg-card/80 backdrop-blur-sm">
@@ -30,10 +30,10 @@ export default function ContactPage() {
                         <div className="mx-auto bg-primary/20 p-4 rounded-full w-fit">
                             <Heart className="w-10 h-10 text-primary"/>
                         </div>
-                        <CardTitle className="font-headline text-2xl pt-4">A Simple "I Miss You"</CardTitle>
+                        <CardTitle className="font-headline text-2xl pt-4">A Thoughtful Message</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <CardDescription>The most effective method. Guaranteed to make my heart skip a beat. Service available 24/7.</CardDescription>
+                        <CardDescription>The most effective method. Guaranteed to make a heart skip a beat. Service available 24/7.</CardDescription>
                     </CardContent>
                 </Card>
                  <Card className="text-center bg-card/80 backdrop-blur-sm">
@@ -41,10 +41,10 @@ export default function ContactPage() {
                         <div className="mx-auto bg-secondary/20 p-4 rounded-full w-fit">
                             <MessageCircle className="w-10 h-10 text-secondary"/>
                         </div>
-                        <CardTitle className="font-headline text-2xl pt-4">A Random Funny Meme</CardTitle>
+                        <CardTitle className="font-headline text-2xl pt-4">A Funny Inside Joke</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <CardDescription>Send a meme that reminds you of us. Response will be delivered in the form of excessive laugh emojis.</CardDescription>
+                        <CardDescription>Send a reference that only you two understand. The response will be delivered in laugh emojis.</CardDescription>
                     </CardContent>
                 </Card>
                  <Card className="text-center bg-card/80 backdrop-blur-sm">
@@ -55,7 +55,7 @@ export default function ContactPage() {
                         <CardTitle className="font-headline text-2xl pt-4">An Unprompted Phone Call</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <CardDescription>Just to hear your voice. The perfect way to brighten my day, with no agenda required.</CardDescription>
+                        <CardDescription>Just to hear their voice. The perfect way to brighten a day, with no agenda required.</CardDescription>
                     </CardContent>
                 </Card>
             </div>

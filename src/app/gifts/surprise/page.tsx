@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from 'next/image';
@@ -18,7 +17,7 @@ export default function SurpriseGiftPage() {
         <div className="flex flex-col min-h-dvh bg-background text-foreground transition-colors duration-500"
              style={{ backgroundColor: "hsl(275, 70%, 96%)" }}
         >
-            <BackgroundMusic src="/music-gifts-3.mp3" />
+            <BackgroundMusic src="/music-placeholder-4.mp3" />
             <PageHeader />
             <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-16">
                 
@@ -28,17 +27,16 @@ export default function SurpriseGiftPage() {
                     </Link>
                 </div>
                 
-                <StorySection title="And One Last Tiny Surprise">
+                <StorySection title="A Special Surprise">
                     <div className="w-full flex flex-col items-center justify-center space-y-4">
                         <Card className="bg-card/50 w-full max-w-4xl">
                             <CardContent className="flex flex-col items-center justify-center p-6 space-y-8 min-h-[500px]">
                                 <RevealCard coverContent={<p className="text-lg">A little piece of everyday magic, just for you...</p>}>
                                     <div className="flex flex-col items-center text-center">
                                         <div className="relative w-full max-w-sm">
-                                            {/* To add your image, place it in /public/gifts/bag-charm.png */}
-                                            <Image src="https://dc42isc7oti09.cloudfront.net/media/2025/08/1754414678620-cfisbr.webp" alt="Pearl Whimsy Tassel Bag Charm" width={400} height={400} className="rounded-lg shadow-lg" data-ai-hint="pearl bag charm" />
+                                            <Image src="https://picsum.photos/seed/gift3/400/400.png" alt="A surprise gift" width={400} height={400} className="rounded-lg shadow-lg" data-ai-hint="elegant charm" />
                                         </div>
-                                        <p className="mt-4 font-body text-lg max-w-prose">I wanted to give you something that you can carry everywhere you will go so this is for you, i hope you will like it yushi</p>
+                                        <p className="mt-4 font-body text-lg max-w-prose">I wanted to give you something that you can carry everywhere, a small token to remind you of this special day. I hope you love it.</p>
                                     </div>
                                 </RevealCard>
                             </CardContent>

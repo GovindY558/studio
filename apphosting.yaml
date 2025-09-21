@@ -8,10 +8,10 @@ runConfig:
 
 env:
   - variable: SMTP_HOST
-    value: smtp.hostinger.com
+    value: ""
   - variable: SMTP_PORT
-    value: 465
+    value: ""
   - variable: SMTP_USER
-    value: yashraj@mmrindustrydata.com
+    value: ""
   - variable: SMTP_PASS
-    value: Rainbow#1312
+    value: ""

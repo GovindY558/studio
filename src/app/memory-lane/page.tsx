@@ -29,7 +29,7 @@ export default function MemoryLanePage() {
       className="flex flex-col min-h-dvh text-foreground transition-colors duration-500"
       style={{ backgroundColor }}
     >
-      <BackgroundMusic src="/music-memories.mp3" />
+      <BackgroundMusic src="/music-placeholder-2.mp3" />
       <PageHeader />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-16">
 

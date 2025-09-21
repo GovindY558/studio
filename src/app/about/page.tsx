@@ -11,7 +11,7 @@ import { BackgroundMusic } from '@/components/background-music';
 export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
-      <BackgroundMusic src="/music-about.mp3" />
+      <BackgroundMusic src="/music-placeholder-5.mp3" />
       <PageHeader />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-16">
 
@@ -21,16 +21,16 @@ export default function AboutPage() {
             </Link>
         </div>
 
-        <StorySection title="About Us: A Love Story">
+        <StorySection title="Our Story">
             <Card className="bg-card/80 backdrop-blur-sm">
                 <CardContent className="p-8 md:p-12 space-y-8">
-                    <div className="relative aspect-[1] w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
-                        <Image src="/about1.jpeg" alt="Romantic banner"  fill className="object-cover" data-ai-hint="romantic hearts" />
+                    <div className="relative aspect-[2/1] w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
+                        <Image src="https://picsum.photos/seed/about1/1200/600" alt="A banner representing a story"  fill className="object-cover" data-ai-hint="love story" />
                     </div>
                     <div className="font-body text-lg text-foreground/90 max-w-3xl mx-auto space-y-6 text-center">
-                        <p>This is the story of Yashraj and Ayushi. A tale written not in the stars, but in shared glances, quiet moments, and endless laughter. It's a story that doesn't need a grand library; it lives in the spaces between our hands and the melody of our favorite songs.</p>
-                        <p>Our 'About Us' isn't a timeline of dates, but a collection of feelings. It’s about the warmth of a hug on a tough day, the joy of discovering a new favorite food together, and the comfort of knowing that no matter what, we are each other's home.</p>
-                        <p>We are partners in crime, dreamers of the same dream, and keepers of each other's secrets. This little corner of the internet is just another chapter in our ever-evolving story. Thank you for being the best part of it.</p>
+                        <p>This is a place to tell your story. A tale written in shared glances, quiet moments, and endless laughter. It's a story that doesn't need a grand library; it lives in the spaces between hands and the melody of favorite songs.</p>
+                        <p>Your 'About Us' isn't just a timeline of dates, but a collection of feelings. It’s about the warmth of a hug on a tough day, the joy of discovering a new favorite food together, and the comfort of knowing that no matter what, you are each other's home.</p>
+                        <p>This little corner of the internet is just another chapter in an ever-evolving story. Thank you for letting us be a small part of it.</p>
                     </div>
                 </CardContent>
             </Card>

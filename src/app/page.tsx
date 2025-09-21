@@ -9,14 +9,14 @@ import { BackgroundMusic } from '@/components/background-music';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
-      <BackgroundMusic src="/music-main.mp3" />
+      <BackgroundMusic src="/music-placeholder-1.mp3" />
       <PageHeader />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-24">
         
-        <StorySection title="Welcome, My Love">
+        <StorySection title="Welcome to Your Celebration">
             <div className="text-center font-body text-lg max-w-2xl mx-auto">
-                <p className="mb-8">This is a special place I've built just for you yushi, to celebrate your birthday and our journey together. Each section is a chapter of our story, a token of my love for you.</p>
-                <p>Click the buttons below to begin your journey babygurl..</p>
+                <p className="mb-8">This is a special place built just for you, to celebrate this wonderful occasion and our journey together. Each section is a chapter of our story, a token of affection.</p>
+                <p>Click the buttons below to begin your journey.</p>
             </div>
         </StorySection>
         
@@ -24,7 +24,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-lg">
                 <Link href="/letter" passHref>
                     <Button size="lg" className="w-full">
-                        A Letter(s) For You <ArrowRight className="ml-2" />
+                        A Letter For You <ArrowRight className="ml-2" />
                     </Button>
                 </Link>
                 <Link href="/memory-lane" passHref>
@@ -47,12 +47,12 @@ export default function Home() {
             <div className="w-full border-t border-border mt-12 pt-12 flex justify-center items-center gap-4">
                  <Link href="/about" passHref>
                     <Button variant="outline">
-                        <Info /> About Us
+                        <Info /> About This Site
                     </Button>
                 </Link>
                  <Link href="/contact" passHref>
                     <Button variant="outline">
-                        <Send /> Contact Me
+                        <Send /> Get In Touch
                     </Button>
                 </Link>
                  <Link href="/terms" passHref>

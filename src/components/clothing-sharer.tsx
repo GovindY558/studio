@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from 'react';
@@ -27,92 +26,42 @@ import { Card } from './ui/card';
 // To add your clothing items:
 // 1. Update the `clothingItems` array below.
 // 2. For each item, provide an `id`, `name`, and a `message`.
-// 3. Add one or more images for each item in the `public` folder.
-//    - The `images` array should contain the paths to these images, e.g., "/gifts/wardrobe/dress-1.png".
-//    - Make sure the folder structure matches, e.g., public/gifts/wardrobe/
+// 3. Add one or more images for each item in the `public/placeholder` folder.
+//    - The `images` array should contain the paths to these images, e.g., "/placeholder/jeans-1.png".
 const clothingItems = [
   {
-    id: 'zara_1',
-    name: 'TRF WIDE-LEG HIGH-WAIST FULL-LENGTH JEANS',
-    images: ['/gifts/wardrobe/jeansone-1.jpg', '/gifts/wardrobe/jeansone-2.jpg'],
-    hint: 'WIDE-LEG HIGH-WAIST FULL-LENGTH JEANS',
-    message: "Jeans that stay great even after a thousand washes—thought these wide‑legs would be a forever staple for you.",
-    link: 'https://www.zara.com/in/en/trf-wide-leg-high-waist-full-length-jeans-p06045224.html?v1=480810171'
+    id: 'item_1',
+    name: 'Classic Denim Jeans',
+    images: ['https://picsum.photos/seed/clothing1a/400/500.png', 'https://picsum.photos/seed/clothing1b/400/500.png'],
+    hint: 'denim jeans',
+    message: "A timeless classic. These jeans are versatile and perfect for any occasion. What do you think?",
+    link: '#'
   },
   {
-    id: 'zara_2',
-    name: 'TRF MID-WAIST WIDE-LEG JEANS',
-    images: ['/gifts/wardrobe/jeanstwo-1.jpg', '/gifts/wardrobe/jeanstwo-2.jpg'],
-    hint: 'TRF MID-WAIST WIDE-LEG JEANS',
-    message: "The mid‑waist, wide‑leg style is so you—classic, comfy, and looks newer than ever even after a wash.",
-    link: 'https://www.zara.com/in/en/trf-mid-waist-wide-leg-jeans-p05359024.html?v1=480810175'
+    id: 'item_2',
+    name: 'Summer Floral Dress',
+    images: ['https://picsum.photos/seed/clothing2a/400/500.png'],
+    hint: 'floral dress',
+    message: "This dress feels perfect for sunny days and garden parties. A beautiful choice for a beautiful person.",
+    link: '#'
   },
   {
-    id: 'zara_3',
-    name: 'TRF WIDE-LEG HIGH-WAIST JEANS',
-    images: ['/gifts/wardrobe/jeansthree-1.jpg', '/gifts/wardrobe/jeansthree-2.jpg'],
-    hint: 'TRF WIDE-LEG HIGH-WAIST JEANS',
-    message: "This style felt so artistic—thought it&apos;d match your creative vibe, even day‑to‑day styling.",
-    link: 'https://www.zara.com/in/en/trf-wide-leg-high-waist-jeans-p05575029.html?v1=463549555'
+    id: 'item_3',
+    name: 'Cozy Knit Sweater',
+    images: ['https://picsum.photos/seed/clothing3a/400/500.png', 'https://picsum.photos/seed/clothing3b/400/500.png'],
+    hint: 'knit sweater',
+    message: "For those cooler evenings, a cozy sweater is a must-have. This one looks incredibly comfortable.",
+    link: '#'
   },
   {
-    id: 'zara_4',
-    name: 'RUSTIC COTTON T-SHIRT',
-    images: ['/gifts/wardrobe/tshirtone-1.jpg'],
-    hint: 'RUSTIC COTTON T-SHIRT',
-    message: "I remembered you choosing some cute T‑shirts at Westside; thought this had your style written all over it.",
-    link: 'https://www.zara.com/in/en/rustic-cotton-t-shirt-p01165444.html?v1=454393254'
+    id: 'item_4',
+    name: 'Elegant Evening Top',
+    images: ['https://picsum.photos/seed/clothing4a/400/500.png'],
+    hint: 'evening top',
+    message: "This top has such an elegant and sophisticated vibe. It would look stunning on you for a night out.",
+    link: '#'
   },
-  {
-    id: 'zara_5',
-    name: 'TPLEATED ZIP T-SHIRT',
-    images: ['/gifts/wardrobe/tshirttwo-1.jpg', '/gifts/wardrobe/tshirttwo-2.jpg'],
-    hint: 'TPLEATED ZIP T-SHIRT',
-    message: "This T‑shirt felt like the vibe from Westside—the colors and cut reminded me of what you'd pick.",
-    link: 'https://www.zara.com/in/en/pleated-zip-t-shirt-p03253802.html?v1=455203389'
-  },
-  {
-    id: 'zara_6',
-    name: 'RUFFLE SKORT',
-    images: ['/gifts/wardrobe/skirtone-1.jpg'],
-    hint: 'RUFFLE SKORT',
-    message: "This skort made me think of your playful side—hope you'd love the choice I made for you.",
-    link: 'https://www.zara.com/in/en/ruffle-skort-p04764500.html?v1=468888628'
-  },
-  {
-    id: 'zara_7',
-    name: 'HIGH-WAIST CURVED DENIM SHORTS',
-    images: ['/gifts/wardrobe/shortsone-1.jpg', '/gifts/wardrobe/shortsone-2.jpg'],
-    hint: 'HIGH-WAIST CURVED DENIM SHORTS',
-    message: "I know you&apos;ve been on the lookout for good shorts—these caught my eye and seemed just right for you.",
-    link: 'https://www.zara.com/in/en/high-waist-curved-denim-shorts-p03607002.html?v1=466558679'
-  },
-  {
-    id: 'zara_8',
-    name: 'HIGH-WAIST CROSSOVER WAIST TRF MOM FIT DENIM BERMUDA SHORTS',
-    images: ['/gifts/wardrobe/shortstwo-1.jpg', '/gifts/wardrobe/shortstwo-2.jpg'],
-    hint: 'HIGH-WAIST CROSSOVER WAIST TRF MOM FIT DENIM BERMUDA SHORTS',
-    message: "Since you&apos;ve been needing shorts for so long, I thought these could be your next favorite pair—it felt like they were meant for you.",
-    link: 'https://www.zara.com/in/en/high-waist-crossover-waist-trf-mom-fit-denim-bermuda-shorts-p04060006.html?v1=452696927'
-  },
-  {
-    id: 'zara_9',
-    name: 'HALTER GORED SHORT DRESS',
-    images: ['/gifts/wardrobe/dressone-1.jpg', '/gifts/wardrobe/dressone-2.jpg'],
-    hint: 'HALTER GORED SHORT DRESS',
-    message: "This pink dress made me think of how beautiful you&apos;d look in it—just had to show you.",
-    link: 'https://www.zara.com/in/en/halter-gored-short-dress-p04661379.html?v1=456207856'
-  },
-  {
-    id: 'zara_10',
-    name: 'TRF MID-WAIST WIDE-LEG JEANS',
-    images: ['/gifts/wardrobe/topone-1.jpg', '/gifts/wardrobe/topone-2.jpg'],
-    hint: 'TRF MID-WAIST WIDE-LEG JEANS',
-    message: "This linen blend top feels like your taste—I just thought you'd love what I picked out for you.",
-    link: 'https://www.zara.com/in/en/crossover-linen-blend-top-p08026709.html?v1=466813843'
-  }
-]
-;
+];
 
 type ClothingItem = typeof clothingItems[0];
 
@@ -121,10 +70,9 @@ export function ClothingSharer() {
   const { toast } = useToast();
 
   const handleShare = async (item: ClothingItem) => {
-    // Use the current window's location for the base URL.
     const baseUrl = window.location.origin;
     const shareUrl = `${baseUrl}/gifts/wardrobe?choice=${item.id}`;
-    const shareText = `Hey Yashraj! I really like this: ${item.name}. ${item.link}`;
+    const shareText = `Hey! I really like this one: ${item.name}. What do you think?`;
     
     if (navigator.share) {
       try {
@@ -139,7 +87,7 @@ export function ClothingSharer() {
         navigator.clipboard.writeText(shareText + `\nSee it here: ${shareUrl}`);
         toast({
           title: "Copied to Clipboard!",
-          description: "Sharing failed, so I've copied the message. Just paste it in our chat!",
+          description: "Sharing failed, so I've copied the message for you to paste.",
         });
       }
     } else {
@@ -147,7 +95,7 @@ export function ClothingSharer() {
       navigator.clipboard.writeText(shareText + `\nSee it here: ${shareUrl}`);
       toast({
         title: "Copied to Clipboard!",
-        description: "The message has been copied. Just paste it in our chat!",
+        description: "The message has been copied. Just paste it in your chat!",
       });
     }
     setSelectedItem(null);
@@ -158,7 +106,7 @@ export function ClothingSharer() {
       <div className="w-full">
         <div className="p-6 text-center">
           <h3 className="text-2xl font-headline">Your Style, Your Choice</h3>
-          <p className="text-muted-foreground font-body mt-2">I've picked out a few things I thought you might love. Click on any item to see it closer, and if you find one that steals your heart, share it with me; because whatever you fall for, is yours.</p>
+          <p className="text-muted-foreground font-body mt-2">A few things I thought you might love. Click on any item to see it closer, and if you find one that steals your heart, share it! Because whatever you fall for, is yours.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
           {clothingItems.map(item => (
@@ -204,7 +152,7 @@ export function ClothingSharer() {
                 </DialogDescription>
               </DialogHeader>
               <div className="py-4">
-                 <p className="text-sm text-center text-muted-foreground">Click the button below to share this with me in our chat!</p>
+                 <p className="text-sm text-center text-muted-foreground">Click the button below to share this with someone special!</p>
               </div>
               <DialogFooter className="sm:justify-center">
                  <Button type="button" size="lg" onClick={() => handleShare(selectedItem)}>

@@ -5,95 +5,46 @@ import { motion } from 'framer-motion';
 
 const memories = [
   {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754337228441-rlv177.PNG",
-    alt: "alt caption",
-    caption: "Tumhe Jo Maine Dekha Moment",
-    date: "3 May 2023",
-    hint: ""
+    src: "https://picsum.photos/seed/memory1/600/400.png",
+    alt: "A cherished memory",
+    caption: "The Day We First Met",
+    date: "A beautiful spring afternoon",
+    hint: "couple smiling"
   },
   {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339028431-jn1bih.jpeg",
-    alt: "alt caption",
-    caption: "First Flower of My Life",
-    date: "5 May 2023 ~ First Date",
-    hint: ""
+    src: "https://picsum.photos/seed/memory2/600/400.png",
+    alt: "A special moment",
+    caption: "Our First Adventure",
+    date: "A memorable summer day",
+    hint: "mountain landscape"
   },
   {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339118094-5q9yhh.PNG",
-    alt: "alt caption",
-    caption: "The Hardest Bye of my Life",
-    date: "7 May 2023 ~ I am so gratefull for the universe tum mujhe mili",
-    hint: ""
+    src: "https://picsum.photos/seed/memory3/600/400.png",
+    alt: "A happy occasion",
+    caption: "A Birthday Celebration",
+    date: "A cozy winter evening",
+    hint: "birthday cake"
   },
   {
-    src: " https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339140135-or8pgi.jpeg",
-    alt: "alt caption",
-    caption: "Kind of Unforgettable Night.. ",
-    date: "1 Aug 2023 ",
-    hint: ""
+    src: "https://picsum.photos/seed/memory4/600/400.png",
+    alt: "A fun trip",
+    caption: "Spontaneous Road Trip",
+    date: "An unforgettable autumn weekend",
+    hint: "car road"
   },
   {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339254508-6299n.jpeg",
-    alt: "alt caption",
-    caption: "Can't Belive now we are celebrating 3rd",
-    date: "Tumhara Pehla Bday Sath main ",
-    hint: ""
+    src: "https://picsum.photos/seed/memory5/600/400.png",
+    alt: "A quiet moment together",
+    caption: "Watching the Sunset",
+    date: "Countless perfect evenings",
+    hint: "beach sunset"
   },
   {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339213214-hd8wj.png",
-    alt: "alt caption",
-    caption: "That Night ",
-    date: "6 Aug 2023 ",
-    hint: ""
-  },
-  {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339182053-6t1a2c.jpeg",
-    alt: "alt caption",
-    caption: "Our Fav Place in Hostel ",
-    date: "14 Aug 2023 ",
-    hint: ""
-  },
-  {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339280203-vqn5ut.JPG",
-    alt: "alt caption",
-    caption: "First Official Date ",
-    date: "15 Aug 2023 ",
-    hint: ""
-  },
-  {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339298241-12ip9.jpg",
-    alt: "alt caption",
-    caption: "I Love You Ayushii",
-    date: "27 Aug 2023",
-    hint: ""
-  },
-  {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339324836-26yei.jpeg",
-    alt: "alt caption",
-    caption: "Saree madhe tu khup God Distest..",
-    date: "December ",
-    hint: ""
-  },
-  {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339335039-cvu91q.jpeg",
-    alt: "alt caption",
-    caption: "Months of Dates",
-    date: "Favourite Fabreury ",
-    hint: ""
-  },
-  {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339750886-mjgudg.JPG",
-    alt: "alt caption",
-    caption: "You are So Hot and Gorges",
-    date: "Forever",
-    hint: ""
-  },
-  {
-    src: "https://dc42isc7oti09.cloudfront.net/media/2025/08/1754339760881-2q0i0c.jpeg",
-    alt: "alt caption",
-    caption: "Happiest Birthday Ayushi",
-    date: "i wish to see you soon...",
-    hint: ""
+    src: "https://picsum.photos/seed/memory6/600/400.png",
+    alt: "A celebration of love",
+    caption: "A Toast to the Future",
+    date: "Here's to many more memories",
+    hint: "celebration toast"
   },
 ];
 

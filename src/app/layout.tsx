@@ -7,8 +7,8 @@ import { EnableMusicDialog } from '@/components/enable-music-dialog';
 import { SparkleCursor } from '@/components/sparkle-cursor';
 
 export const metadata: Metadata = {
-  title: 'LoveStory',
-  description: 'A special birthday gift for my love',
+  title: 'Celebration Theme',
+  description: 'A special theme for a special occasion',
 };
 
 export default function RootLayout({

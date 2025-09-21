@@ -10,7 +10,7 @@ import { BackgroundMusic } from '@/components/background-music';
 export default function TermsPage() {
   return (
     <div className="flex flex-col min-h-dvh bg-background text-foreground">
-      <BackgroundMusic src="/music-terms.mp3" />
+      <BackgroundMusic src="/music-placeholder-7.mp3" />
       <PageHeader />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-16">
 
@@ -20,27 +20,27 @@ export default function TermsPage() {
             </Link>
         </div>
 
-        <StorySection title="Terms & Conditions of Love">
+        <StorySection title="The Terms & Conditions of This Gift">
             <Card className="bg-card/80 backdrop-blur-sm">
                 <CardHeader>
-                    <CardTitle className="text-center font-body text-muted-foreground">Binding Agreement for Ayushi</CardTitle>
+                    <CardTitle className="text-center font-body text-muted-foreground">A Binding Agreement for the Recipient</CardTitle>
                 </CardHeader>
                 <CardContent className="p-8 font-body text-lg space-y-6 max-w-3xl mx-auto">
                     <div className="flex items-start gap-4">
                         <ChevronsRight className="w-8 h-8 text-primary mt-1 shrink-0"/>
-                        <p><strong className="font-semibold text-foreground">Clause 1: On Being Fabulous.</strong> The recipient, Ayushi, hereby agrees to continue being her amazing, wonderful, and brilliant self. This clause is non-negotiable.</p>
+                        <p><strong className="font-semibold text-foreground">Clause 1: On Being Fabulous.</strong> The recipient hereby agrees to continue being their amazing, wonderful, and brilliant self. This clause is non-negotiable and strictly enforced.</p>
                     </div>
                      <div className="flex items-start gap-4">
                         <ChevronsRight className="w-8 h-8 text-primary mt-1 shrink-0"/>
-                        <p><strong className="font-semibold text-foreground">Clause 2: The Right to Gifts.</strong> The recipient has an inalienable right to all gifts presented herein. It has been determined by the highest authority (my heart) that she unequivocally deserves them.</p>
+                        <p><strong className="font-semibold text-foreground">Clause 2: The Right to Gifts.</strong> The recipient has an inalienable right to all gifts presented herein. It has been determined by the highest authority (the heart) that they unequivocally deserve them.</p>
                     </div>
                      <div className="flex items-start gap-4">
                         <ChevronsRight className="w-8 h-8 text-primary mt-1 shrink-0"/>
-                        <p><strong className="font-semibold text-foreground">Clause 3: Delivery & Fulfillment.</strong> All physical items mentioned shall be officially and ceremoniously handed over upon the recipient's arrival in Pune. This is to ensure maximum joy and a mandatory welcome hug.</p>
+                        <p><strong className="font-semibold text-foreground">Clause 3: Delivery & Fulfillment.</strong> All physical items mentioned shall be officially and ceremoniously handed over at a time and place of maximum joy and convenience.</p>
                     </div>
                      <div className="flex items-start gap-4">
                         <ChevronsRight className="w-8 h-8 text-primary mt-1 shrink-0"/>
-                        <p><strong className="font-semibold text-foreground">Clause 4: The Smile Mandate.</strong> The recipient is contractually obligated to smile, feel loved, and have the happiest of birthdays. Failure to comply will result in an immediate surplus of cuddles and favorite-food offerings.</p>
+                        <p><strong className="font-semibold text-foreground">Clause 4: The Smile Mandate.</strong> The recipient is contractually obligated to smile, feel appreciated, and have the happiest of celebrations. Failure to comply will result in an immediate surplus of compliments and favorite-food offerings.</p>
                     </div>
                      <div className="flex items-start gap-4">
                         <ChevronsRight className="w-8 h-8 text-primary mt-1 shrink-0"/>
