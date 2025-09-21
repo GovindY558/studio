@@ -25,11 +25,11 @@ export default function AboutPage() {
             <Card className="bg-card/80 backdrop-blur-sm">
                 <CardContent className="p-8 md:p-12 space-y-8">
                     <div className="relative aspect-[2/1] w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
-                        <Image src="https://picsum.photos/seed/about1/1200/600" alt="A banner representing a story"  fill className="object-cover" data-ai-hint="love story" />
+                        <Image src="https://picsum.photos/seed/about1/1200/600" alt="A banner representing a story" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" data-ai-hint="love story" />
                     </div>
                     <div className="font-body text-lg text-foreground/90 max-w-3xl mx-auto space-y-6 text-center">
                         <p>This is a place to tell your story. A tale written in shared glances, quiet moments, and endless laughter. It's a story that doesn't need a grand library; it lives in the spaces between hands and the melody of favorite songs.</p>
-                        <p>Your 'About Us' isn't just a timeline of dates, but a collection of feelings. It’s about the warmth of a hug on a tough day, the joy of discovering a new favorite food together, and the comfort of knowing that no matter what, you are each other's home.</p>
+                        <p>Your 'About Us' isn't just a timeline of dates, but a collection of feelings. It’s about the warmth of a hug on a tough day, the joy of discovering a new favorite food together, and the comfort of knowing that no matter what, you have a home in each other.</p>
                         <p>This little corner of the internet is just another chapter in an ever-evolving story. Thank you for letting us be a small part of it.</p>
                     </div>
                 </CardContent>

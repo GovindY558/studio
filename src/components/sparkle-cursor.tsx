@@ -5,7 +5,12 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkle } from 'lucide-react';
 
-const SparkleInstance = ({ x, y, id }) => {
+interface SparkleInstanceProps {
+  x: number;
+  y: number;
+}
+
+const SparkleInstance = ({ x, y }: SparkleInstanceProps) => {
   // Random values for more dynamic animations
   const duration = Math.random() * 0.6 + 0.4;
   const initialScale = Math.random() * 0.5 + 0.5;
@@ -15,7 +20,6 @@ const SparkleInstance = ({ x, y, id }) => {
   
   return (
     <motion.div
-      key={id}
       style={{
         position: 'fixed',
         left: x,
@@ -44,14 +48,19 @@ const SparkleInstance = ({ x, y, id }) => {
   );
 };
 
+interface SparkleData {
+    id: number;
+    x: number;
+    y: number;
+}
 
 export function SparkleCursor() {
-  const [sparkles, setSparkles] = useState([]);
+  const [sparkles, setSparkles] = useState<SparkleData[]>([]);
 
   useEffect(() => {
     let sparkleId = 0;
 
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       // Limit sparkle generation to avoid performance issues
       if (sparkleId % 3 !== 0) {
         sparkleId++;
@@ -85,7 +94,7 @@ export function SparkleCursor() {
   return (
     <AnimatePresence>
       {sparkles.map(({ id, x, y }) => (
-        <SparkleInstance key={id} id={id} x={x} y={y} />
+        <SparkleInstance key={id} x={x} y={y} />
       ))}
     </AnimatePresence>
   );

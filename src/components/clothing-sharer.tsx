@@ -106,7 +106,7 @@ export function ClothingSharer() {
       <div className="w-full">
         <div className="p-6 text-center">
           <h3 className="text-2xl font-headline">Your Style, Your Choice</h3>
-          <p className="text-muted-foreground font-body mt-2">A few things I thought you might love. Click on any item to see it closer, and if you find one that steals your heart, share it! Because whatever you fall for, is yours.</p>
+          <p className="text-muted-foreground font-body mt-2">A few things we thought you might love. Click on any item to see it closer, and if you find one that steals your heart, share it! Because whatever you fall for, is yours.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
           {clothingItems.map(item => (
@@ -120,7 +120,7 @@ export function ClothingSharer() {
                   {item.images.map((src, index) => (
                     <CarouselItem key={index}>
                       <div className="p-0 aspect-[4/5] relative">
-                        <Image src={src} alt={`${item.name} - view ${index + 1}`} fill className="object-cover" data-ai-hint={item.hint} />
+                        <Image src={src} alt={`${item.name} - view ${index + 1}`} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" data-ai-hint={item.hint} />
                       </div>
                     </CarouselItem>
                   ))}

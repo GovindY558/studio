@@ -91,7 +91,7 @@ const TimelineItem = ({ memory, index }: { memory: typeof memories[0], index: nu
               fill
               className="object-cover grayscale hover:grayscale-0 filter saturate-50 hover:saturate-100 transition-all duration-500 ease-in-out"
               data-ai-hint={memory.hint}
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <div className="mt-3 text-left">
