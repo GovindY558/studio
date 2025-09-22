@@ -23,7 +23,7 @@ export default function LetterPage() {
 
         <StorySection title="A Letter From My Heart">
           <RevealCard
-            coverContent={<p className="text-lg">Click to read a special message...</p>}
+            coverContent={<p className="text-lg">Click to read my birthday wishes for you...</p>}
           >
             <div className="relative w-full max-w-2xl">
               <Image src="https://picsum.photos/seed/letter1/800/1067.png" alt="A heartfelt letter" width={800} height={1067} className="rounded-lg shadow-lg object-contain" data-ai-hint="handwritten letter" />
