@@ -1,3 +1,4 @@
+
 import { PageHeader } from '@/components/page-header';
 import { StorySection } from '@/components/story-section';
 import { PageFooter } from '@/components/page-footer';
@@ -13,7 +14,7 @@ export default function Home() {
       <PageHeader />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 space-y-24">
         
-        <StorySection title="Welcome to Your Celebration">
+        <StorySection title="Welcome, My Love">
             <div className="text-center font-body text-lg max-w-2xl mx-auto">
                 <p className="mb-8">This is a special place built just for you, to celebrate this wonderful occasion and our journey together. Each section is a chapter of our story, a token of affection.</p>
                 <p>Click the buttons below to begin your journey.</p>
