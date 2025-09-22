@@ -30,7 +30,7 @@ export default function AboutPage() {
                     </div>
                     <div className="font-body text-lg text-foreground/90 max-w-3xl mx-auto space-y-6 text-center">
                         <p>This is a place to tell you about our story. I never imagined I’d meet you like this. You came so close to me that I didn’t even realize when you became a part of me. I still remember the first time you hugged me—it’s something I can never forget. Even now, it feels unbelievable that you were the one who wrapped me in your arms.it lingers like a beautiful dream.</p>
-                        <p>Your 'About Us' isn't just a timeline of dates, but a collection of feelings. It’s about the warmth of a hug on a tough day, the joy of discovering a new favorite food together, and the comfort of knowing that no matter what, you have a home in each other.</p>
+                        <p>Never think of yourself as alone, because I’m always with you. You’re so much wiser and deeper than even you realize—understanding you is something not everyone can do. Yes, it’s true that I’m not physically there right now, but I’m still close to you. Whenever you miss me, just close your eyes—you’ll find me right beside you.</p>
                         <p>This little corner of the internet is just another chapter in an ever-evolving story. Thank you for letting us be a small part of it.</p>
                     </div>
                 </CardContent>
