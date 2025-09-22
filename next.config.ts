@@ -24,6 +24,12 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'picsum.photos',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'dc42isc7oti09.cloudfront.net',
         port: '',
         pathname: '/**',

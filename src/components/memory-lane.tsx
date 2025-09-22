@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const memories = [
   {
-    src: "https://picsum.photos/seed/memory1/600/400.png",
+    src: "/test.jpg",
     alt: "A cherished memory",
     caption: "The Day We First Met",
     date: "A beautiful spring afternoon",

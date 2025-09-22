@@ -15,7 +15,7 @@ const videos = [
   {
     id: 'special',
     title: "This Year's Special",
-    thumbnail: 'https://picsum.photos/seed/video1/1280/720.png',
+    thumbnail: '/test.jpg',
     hint: 'celebration video',
     src: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1',
   },

@@ -37,7 +37,7 @@ export default function LetterPage() {
             coverContent={<p className="text-lg">A special promise for the future...</p>}
           >
             <div className="relative w-full max-w-2xl">
-              <Image src="https://picsum.photos/seed/letter2/800/1067.png" alt="A rose and two polaroids as a promise" width={800} height={1067} className="rounded-lg shadow-lg object-contain" data-ai-hint="rose polaroids" />
+              <Image src="/test.jpg" alt="A rose and two polaroids as a promise" width={800} height={1067} className="rounded-lg shadow-lg object-contain" data-ai-hint="rose polaroids" />
             </div>
             <p className="mt-4 text-center font-body text-lg max-w-prose">This rose is being kept safe. It's a promise of all the beautiful moments waiting for you. It will be delivered the moment you're here.</p>
           </RevealCard>
