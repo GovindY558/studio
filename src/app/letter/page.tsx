@@ -21,7 +21,7 @@ export default function LetterPage() {
             </Link>
         </div>
 
-        <StorySection title="A Letter From The Heart">
+        <StorySection title="A Letter From My Heart">
           <RevealCard
             coverContent={<p className="text-lg">Click to read a special message...</p>}
           >
