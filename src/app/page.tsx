@@ -17,7 +17,7 @@ export default function Home() {
         <StorySection title="Welcome, My Love">
             <div className="text-center font-body text-lg max-w-2xl mx-auto">
                 <p className="mb-8">This is a special space I’ve created just for you, to celebrate the beautiful occasion of your birthday. Every part of it tells a different story—each chapter reflecting a unique perspective of You.</p>
-                <p>Click the buttons below to begin your journey.</p>
+                <p>Click the buttons below to begin your journey Babu...</p>
             </div>
         </StorySection>
         
