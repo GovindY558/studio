@@ -32,6 +32,8 @@ export default function AboutPage() {
                         <p>I never imagined I’d meet you like this. You came so close to me that I didn’t even realize when you became a part of me. I still remember the first time you hugged me—it’s something I can never forget. Even now, it feels unbelievable that you were the one who wrapped me in your arms.it lingers like a beautiful dream.</p>
                         <p>Never think of yourself as alone, because I’m always with you. You’re so much wiser and deeper than even you realize—understanding you is something not everyone can do. Yes, it’s true that I’m not physically there right now, but I’m still close to you. Whenever you miss me, just close your eyes—you’ll find me right beside you.</p>
                         <p>You know, I really wished I could celebrate your birthday with you. I’m so sorry, my love, that I can’t be there right now. But if you close your eyes and feel with your heart, you’ll find me right there with you.<br /><br />Chalo ab Ankhe Band Karo, Aur Socho Mai Cake Leke Aaya Hun, Aur Ap Cake 🎂  Cut Kar Rahi Hooooo...</p>
+                        <p>Thank you so, so much for coming into my life— मेरी ज़िंदगी.</p>
+                        <p>#GKY ♥ </p>
                     </div>
                 </CardContent>
             </Card>
