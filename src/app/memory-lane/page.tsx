@@ -39,7 +39,7 @@ export default function MemoryLanePage() {
             </Link>
         </div>
 
-        <StorySection title="Our Memory Lane">
+        <StorySection title="Your Memory Lane">
           <MemoryLane />
         </StorySection>
 

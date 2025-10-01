@@ -5,21 +5,21 @@ import { motion } from 'framer-motion';
 
 const memories = [
   {
-    src: "/test.jpg",
+    src: "/suit1_giftt1.jpg",
     alt: "A cherished memory",
     caption: "The Day We First Met",
     date: "A beautiful spring afternoon",
     hint: "couple smiling"
   },
   {
-    src: "https://picsum.photos/seed/memory2/600/400.png",
+    src: "/sundari.jpg",
     alt: "A special moment",
     caption: "Our First Adventure",
     date: "A memorable summer day",
     hint: "mountain landscape"
   },
   {
-    src: "https://picsum.photos/seed/memory3/600/400.png",
+    src: "/img2.jpg",
     alt: "A happy occasion",
     caption: "A Birthday Celebration",
     date: "A cozy winter evening",

@@ -34,15 +34,16 @@ export default function SurpriseGiftPage() {
                                 <RevealCard coverContent={<p className="text-lg">A little piece of everyday magic, just for you...</p>}>
                                     <div className="flex flex-col items-center text-center">
                                         <div className="relative w-full max-w-sm">
-                                            <Image src="/test.jpg" alt="A surprise gift" width={400} height={400} className="rounded-lg shadow-lg" data-ai-hint="elegant charm" />
+                                            <Image src="/watch_bag.jpg" alt="A surprise gift" width={400} height={400} className="rounded-lg shadow-lg" data-ai-hint="elegant charm" />
                                         </div>
-                                        <p className="mt-4 font-body text-lg max-w-prose">I wanted to give you something that you can carry everywhere, a small token to remind you of this special day. I hope you love it.</p>
+                                        <p className="mt-4 font-body text-lg max-w-prose">I wanted to give you something that you can carry everywhere, a small token to remind you of this special day. I hope you love it #Babu.If  Yes, Please go Ahead Dear ☺.</p>
                                     </div>
                                 </RevealCard>
                             </CardContent>
                         </Card>
                     </div>
                 </StorySection>
+                
 
             </main>
             <PageFooter />

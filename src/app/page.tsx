@@ -30,7 +30,7 @@ export default function Home() {
                 </Link>
                 <Link href="/memory-lane" passHref>
                     <Button size="lg" className="w-full">
-                        Our Memory Lane <ArrowRight className="ml-2" />
+                        Your Memory Lane <ArrowRight className="ml-2" />
                     </Button>
                 </Link>
                 <Link href="/video" passHref>
@@ -48,7 +48,7 @@ export default function Home() {
             <div className="w-full border-t border-border mt-12 pt-12 flex justify-center items-center gap-4">
                  <Link href="/about" passHref>
                     <Button variant="outline">
-                        <Info /> About This Site
+                        <Info /> About You
                     </Button>
                 </Link>
                  <Link href="/contact" passHref>

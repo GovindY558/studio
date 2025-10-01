@@ -31,34 +31,84 @@ import { Card } from './ui/card';
 const clothingItems = [
   {
     id: 'item_1',
-    name: 'Classic Denim Jeans',
-    images: ['https://picsum.photos/seed/clothing1a/400/500.png', 'https://picsum.photos/seed/clothing1b/400/500.png'],
-    hint: 'denim jeans',
-    message: "A timeless classic. These jeans are versatile and perfect for any occasion. What do you think?",
+    name: 'Had to give You That Gift',
+    images: ['/purple_saree.jpeg', 'https://picsum.photos/seed/clothing1b/400/500.png'],
+    hint: 'Saree Purple',
+    message: "A timeless classic Saree as a Purple_Color. This Color is versatile and perfect for any occasion. What do you think?",
     link: '#'
   },
   {
     id: 'item_2',
-    name: 'Summer Floral Dress',
-    images: ['https://picsum.photos/seed/clothing2a/400/500.png'],
+    name: 'But, Your Fragrance is Better than This One',
+    images: ['/chanel_perfume.jpg'],
+    hint: 'floral dress',
+    message: "As I think,This Perfume will feel you always Special. A Better Try from my side for your special day.",
+    link: '#'
+  },
+
+  {
+    id: 'item_3',
+    name: 'For Your Beauty',
+    images: ['/floral_dress.webp'],
     hint: 'floral dress',
     message: "This dress feels perfect for sunny days and garden parties. A beautiful choice for a beautiful person.",
     link: '#'
   },
+
   {
-    id: 'item_3',
+    id: 'item_4',
     name: 'Cozy Knit Sweater',
-    images: ['https://picsum.photos/seed/clothing3a/400/500.png', 'https://picsum.photos/seed/clothing3b/400/500.png'],
+    images: ['/sweater.webp', 'https://picsum.photos/seed/clothing3b/400/500.png'],
     hint: 'knit sweater',
     message: "For those cooler evenings, a cozy sweater is a must-have. This one looks incredibly comfortable.",
     link: '#'
   },
   {
-    id: 'item_4',
+    id: 'item_5',
+    name: 'Out Jeans',
+    images: ['/jeans.jpg'],
+    hint: 'Jeans',
+    message: "I really like this type of Jeans upon you. It would look stunning on you for a night out.",
+    link: '#'
+  },
+  {
+    id: 'item_6',
     name: 'Elegant Evening Top',
-    images: ['https://picsum.photos/seed/clothing4a/400/500.png'],
+    images: ['/evening_top.webp'],
     hint: 'evening top',
-    message: "This top has such an elegant and sophisticated vibe. It would look stunning on you for a night out.",
+    message: "This top has such an elegant and sophisticated vibe.Really, if i was there Today, I wish to wear this top to you",
+    link: '#'
+  },
+  {
+    id: 'item_7',
+    name: 'Saree Coffee',
+    images: ['/cofee_saree.jpeg'],
+    hint: 'evening top',
+    message: "This Coffee Color  has such an Beautiful and sophisticated vibes in party. It would look stunning on you for a night & Day out.",
+    link: '#'
+  },
+  {
+    id: 'item_8',
+    name: 'Also Suit',
+    images: ['/suit2.jpeg'],
+    hint: 'Suit Design',
+    message: "This Suit is also my favorite color. It would look like PARI, Really I like it.",
+    link: '#'
+  },
+  {
+    id: 'item_10',
+    name: 'Special Gift',
+    images: ['/rishikesh.jfif'],
+    hint: 'Rishikesh_Package',
+    message: "This will be also a part of the gift as a one trip for you in - Rishikesh Adventure.",
+    link: '#'
+  },
+  {
+    id: 'item_9',
+    name: 'Phone To You',
+    images: ['/iphone.jpg'],
+    hint: 'You Like',
+    message: "This is also Special gift for you, which i want to give you always, But Sorry Mam.KASH AISA HO PATA",
     link: '#'
   },
 ];
